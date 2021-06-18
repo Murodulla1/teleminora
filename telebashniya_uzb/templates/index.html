@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__phone">998 71 123 12 61</div>
+            <div class="header__back">
+                <div class="header__logo"> <img src="{% static 'media/logo.png' %}" alt="" /></div>
+                <div class="header__menu">
+                    <li class="header__item"> <a class="link" href="{% url 'index' %}">Главная</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'about' %}">О нас </a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'meals' %}">Посетителям</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'news' %}">Новости</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'map' %}">Партнерам</a></li>
+                    <li class="header__item"> <a class="link" href="#">Правила</a></li>
+                    <li class="header__item"> <a class="link" href="#">Контакты</a></li>
+                </div>
+                <div class="header__lang"> <a href="">РУС / ENG / УЗБ</a></div>
+                <button class="header__btn"><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="popular__title">
+            <div class="popular__box">
+                <div class="splide popular">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide">
+                                <div class="popular__text">
+                                    Самое высокое здание с открытой смотровой площадкой<br> Центральная Азия </div>
+                                <div class="popular__item">Ташкентская телебашня <br> Член Всемирной федерации великих башен.</div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="popular__text">
+                                    Markaziy Osiyoda ochiq kuzatuv maydonchasi bo'lgan eng baland inshoot</div>
+                                <div class="popular__item">Toshkent teleminorasi Butunjahon Buyuk minoralar federatsiyasining a'zosi.</div>
+                            </div>
+                            <div class="splide__slide">
+                                <div class="popular__text">
+                                    The tallest structure with an open observation deck in Central Asia</div>
+                                <div class="popular__item">Tashkent TV Tower is a member of the World Federation of Great Towers.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vistor">
+        <div class="container">
+            <div class="vistor__title">
+                <div class="vistor__text">MEHMONLAR UCHUN </div>
+            </div>
+            <div class="vistor__row">
+                <div class="vistor__box">
+                    <div class="vistor__item">
+                        <div class="vistor__photo"><img src="{% static 'media/slider1.jpg' %}" alt="" /></div>
+                        <div class="vistor__task"><a href="https://www.afisha.uz/catalog/9013/"> Turistik agentlik </a></div>
+                    </div>
+                </div>
+                <div class="vistor__box">
+                    <div class="vistor__item">
+                        <div class="vistor__photo"><img src="{% static 'media/slider2.jpg' %}" alt="" /></div>
+                        <div class="vistor__task"><a href="https://www.nasa.gov/multimedia/nasatv/#public"> Multimedia kompleksi </a></div>
+                    </div>
+                </div>
+                <div class="vistor__box">
+                    <div class="vistor__item">
+                        <div class="vistor__photo"><img src="{% static 'media/staloviy.jpg' %}" alt="" /></div>
+                        <div class="vistor__task"><a href="https://www.tourister.ru/world/asia/uzbekistan/city/tashkent/placeofinterest/26580#restoran"> Restoran majmuasi </a></div>
+                    </div>
+                </div>
+                <div class="vistor__box">
+                    <div class="vistor__item">
+                        <div class="vistor__photo"><img src="{% static 'media/slider1.jpg' %}" alt="" /></div>
+                        <div class="vistor__task" ><a href="https://pegast.ru/russia/excursions/moscow/ostankino-tv-tower"> Turistik agentlik </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="forus">
+        <div class="container">
+            <div class="forus__title">
+                <div class="forus__text">
+                    <div class="title">Biz haqimizda</div>
+                    <div class="forus__page">Balki balandlikdagi eng jozibali narsa bu kundalik hayotdan vaqtincha ko'tarilish va hayotning harakatini yuqoridan o'ylash imkoniyatidir. <br> Shu sababli, zamonaviy insonning taraqqiyotga bo'lgan ishtiyoqi ramzi bo'lgan ko'p qavatli binolar dunyo bo'ylab ko'plab sayyohlarni jalb qilmoqda. <br> Jahon federatsiyasi tashkil etilgandan keyin minora turizmiga qiziqish global tus ola boshladi. Ta'sischilari Eyfel minorasi va Ostankino tele minorasi bo'lgan baland qavatlar.</div>
+                    <div class="forus__item"> <a href="">BATAFSIL MA'LUMOT</a></div>
+                </div>
+                <div class="forus__photo" style="z-index:1"> <img src="{% static 'media/sldieer5.png' %}" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <event class="event">
+        <div class="container">
+            <div class="event__title">Hodisalar</div>
+            <div class="event__page">
+                <div class="event__box">
+                    <div class="event__photo"> <img src="{% static 'media/slidertel.png' %}" alt="" /></div>
+                    <div class="event__text"> <a href="">Toshkent teleminorasi <br> 35 yosh</a>
+                        <div class="event__item">
+                            Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="event__box">
+                    <div class="event__photo"> <img src="{% static 'media/slidertel.png' %}" alt="" /></div>
+                    <div class="event__text"> <a href="{% url 'about' %}">Toshkent teleminorasi <br> 35 yosh</a>
+                        <div class="event__item">
+                            Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </event>
+    <div class="adress">
+        <div class="container">
+            <div class="adress__all">
+                <div class="adress__us">
+                    <div class="adress__left">
+                        <div class="b">Manzil</div>
+                        <div class="p">г.Ташкент, ул Амир Темур</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Телефон</div>
+                        <div class="p">+8 71 202 35 82</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Электронная почта</div>
+                        <div class="p">toshkenttower@mail.ru</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Время работы</div>
+                        <div class="p">Пн-Сб. 9:00 - 18:00</div>
+                    </div>
+                    <div class="adress__line">
+                        <div class="adress__text">Qayta aloqa
+                            <div class="adress__input">
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                    <input class="input" name="index1" type="text" placeholder="Ism" />
+                                    <input class="input" name="index2" type="number" placeholder="Telefon raqam" />
+                                    <button type="submit" style="" class="btn" >Button Button Button</button>
+                                </form>
+                            </div>
+                        </div>
+                        {% for i in bashni %}
+                        <div class="adress__button"><a href="{% url 'news' %}">{{i.title}}</a></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div class="container">
+            <div class="social__page">
+                <div class="social__text">©Copyright 2021. Toshkent Tower</div>
+                <div class="social__icons"><a href="{% url 'news' %}"><img src="{% static 'media/facebook.svg' %}" alt="" /></a><a href=""><img src="{% static 'media/instagram.svg' %}" alt="" /></a><a href=""><img src="{% static 'media/telegram.svg' %}" alt="" /></a></div>
+                <div class="social__items">veb-saytlarni ishlab chiqish Tuitsoft.uz</div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <script src="{% static 'js/app.min.js' %}"></script>
+</body>
+
+</html>

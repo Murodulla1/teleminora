@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__phone">998 71 123 12 61</div>
+            <div class="header__back">
+                <div class="header__logo"> <img src="{% static 'media/logo.png' %}" alt="" /></div>
+                <div class="header__menu">
+                    <li class="header__item"> <a class="link" href="{% url 'index' %}">Главная</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'about' %}">О нас </a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'meals' %}">Посетителям</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'news' %}">Новости</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'map' %}">Партнерам</a></li>
+                    <li class="header__item"> <a class="link" href="#">Правила</a></li>
+                    <li class="header__item"> <a class="link" href="#">Контакты</a></li>
+                </div>
+                <div class="header__lang"> <a href="{% url 'news' %}">РУС / ENG / УЗБ</a></div>
+                <button class="header__btn"><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="phead">
+        <div class="container">
+            <div class="phead__ground">
+                <div class="phead__page">Restoran majmuasi</div>
+                <div class="phead__text"> <a href="{% url 'index' %}">Asosiy / Restoran majmuasi</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="phead__deco"></div>
+    <div class="mainabout">
+        <div class="container">
+            <div class="mainabout__all">
+                <div class="mainabout__photo"><img src="{% static 'media/photo.png' %}" alt="" /></div>
+                <div class="mainabout__text">
+                    <div class="p">100-120 metr balandliklarda "Koinot" restoranining "Qizil" va "Moviy" zallari mavjud bo'lib, ular bir vaqtning o'zida 120 ta mehmonni qabul qila oladi. Restoranning zallarida chiroyli xizmat ko'rsatiladigan stollarda, minora tanasi atrofida aylanadigan maydonchada o'tirgan mehmonlar poytaxt panoramasini tomosha qiladilar. </div>
+                    <div class="b">Ularning iltimosiga binoan ularga milliy va evropa taomlari, turli xil ichimliklar beriladi. Minora magistralida Shveytsariyaning "Shindler" kompaniyasining 3 yo'lovchi tezyurar liftlari mavjud. Televizion minora qabulxonasi rassom A. Buxarboyev tomonidan yarim qimmatbaho toshlar, marmar va metalldan yasalgan florentsiya va rim mozaikalari uslubida mozaika paneli bilan bezatilgan.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainpage">
+        <div class="container">
+            <div class="mainpage__page">
+                <div class="p">Toshkent teleminorasiga tashrif buyurgan barcha mehmonlar qushlarning ko'zlari bilan ovqatlanishlari mumkin. Buning uchun faqat minora hududida 98 metrdan 104 metrgacha balandlikda joylashgan "Koinot" ikki zalli restoraniga tashrif buyurishingiz kerak. Restoranning o'ziga xos xususiyati shundaki, uning qavati aylanib, tashrif buyuruvchilarga Toshkentning yangi panoramalarini ochib beradi, restoranning o'ziga xos atmosferasini engil pianino musiqasi, nafis dekorasi, yarim qorong'ulik va stol ustidagi haqiqiy shamlar taqdim etadi.</div>
+                <div class="b">Afsonaviy "Koinot" restoran majmuasi sizni ko'rishga taklif qiladi. O'zingizni katta shaharning shovqin-suronidan uzoqlashtiring va o'zingizni faqat qushlar etib boradigan balandlikda osoyishtalik va osoyishtalik muhitida toping. Haqiqiy biluvchilarni ham befarq qoldirmaydigan o'z ishining haqiqiy ustalari tomonidan puxta tayyorlangan ajoyib taomlarni biznikiga kelib tatib ko'ring. Avvalgidek, restoran majmuasining har uchala darajasining pollari asta-sekin aylanib, mehmonlarga tanlangan stoldan qat'i nazar, Toshkentning eng yaxshi ko'rinishini kafolatlaydi. Qabul qiling: baxtning unchalik baland emasligini anglab, yaxshi kompaniyada o'tirib, shaharga yuqoridan qarab, hayotdan zavqlanish qanday yoqimli?.</div>
+            </div>
+        </div>
+    </div>
+    <div class="slidermeals">
+        <div class="container">
+            <div class="slidermeal splide">
+                <div class="slidermeal__track splide__track">
+                    <div class="sldiermeal__list splide__list">
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal1.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal2.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal3.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal4.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal1.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal2.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal3.png)"></div>
+                        </div>
+                        <div class="slidermeal__slide splide__slide">
+                            <div class="slidermeal__img" style="background-image:url(assets/img/meal4.png)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="book">
+        <div class="container">
+            <div class="book__all">
+                <div class="book__text">Joyni buyurtma qiling
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <input class="book__input" type="text" name="meals1" placeholder="Ism" /><img src="{% static 'media/input1.png' %}" alt="" />
+                        <input class="book__input" type="number" name="meals2" placeholder="Telefon raqam" /><img src="{% static 'media/input2.png' %}" alt="" />
+                        <input class="book__input" type="number" name="meals3" placeholder="Odamlar soni" /><img src="{% static 'media/input3.png' %}" alt="" />
+                        <input class="book__input" type="date" name="meals4" placeholder="sana va vaqt" /><img src="{% static 'media/input4.png' %}" alt="" />
+                        <button type="submit" style="" class="btn" >Junatish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <event class="event">
+        <div class="container">
+            <div class="event__title"></div>
+            <div class="event__page">
+                <div class="event__box">
+                    <div class="event__photo"> <img src="{% static 'media/slidertel.png' %}" alt="" /></div>
+                    <div class="event__text"> <a href="">Toshkent teleminorasi<br> 36 Yosh</a>
+                        <div class="event__item">
+                            Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                    </div>
+                </div>
+                <div class="event__box">
+                    <div class="event__photo"> <img src="{% static 'media/slidertel.png' %}" alt="" /></div>
+                    <div class="event__text"> <a href="">Toshkent teleminorasi<br> 36 Yosh</a>
+                        <div class="event__item">
+                            Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </event>
+    <div class="adress">
+        <div class="container">
+            <div class="adress__all">
+                <div class="adress__us">
+                    <div class="adress__left">
+                        <div class="b">Адрес</div>
+                        <div class="p">г.Ташкент, ул Амир Темур</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Телефон</div>
+                        <div class="p"><a href="+8 71 202 35 82">+8 71 202 35 82</a></div>
+                        <div class="adress__left"></div>
+                        <div class="b">Elektron pochta</div>
+                        <div class="p">toshkenttower@mail.ru</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Время работы</div>
+                        <div class="p">Пн-Сб. 9:00 - 18:00</div>
+                    </div>
+                    <div class="adress__line">
+                        <div class="adress__text">qayta <aloq></aloq>a
+                            <div class="adress__input">
+                                <input class="input" type="text" placeholder="Ism" />
+                                <input class="input" type="text" placeholder="Telefon raqam" />
+                            </div>
+                        </div>
+                        <div class="adress__button"><a href="{% url 'news' %}">Junatish</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div class="container">
+            <div class="social__page">
+                <div class="social__text">©Copyright 2021. Toshkent Tower</div>
+                <div class="social__icons"><a href="{% url 'news' %}"><img src="{% static 'media/facebook.svg' %}" alt="" /></a><a href=""><img src="{% static 'media/instagram.svg' %}" alt="" /></a><a href="{% url 'news' %}"><img src="{% static 'media/telegram.svg' %}" alt="" /></a></div>
+                <div class="social__items">veb-saytlarni ishlab chiqish Tuitsoft.uz</div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <script src="{% static 'js/app.min.js' %}"></script>
+    <script>
+        new Splide('.slidermeal', {
+            type: 'loop',
+            focus: 'center',
+            perPage: 4,
+            autoplay: true,
+            interval: 1000,
+            breakpoints: {
+                1024: {
+                    perPage: 3
+                },
+                768: {
+                    perPage: 2
+                }
+            }
+        }).mount();
+    </script>
+</body>
+
+</html>

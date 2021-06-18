@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__phone">998 71 123 12 61</div>
+            <div class="header__back">
+                <div class="header__logo"> <img src="{% static 'media/logo.png' %}" alt="" /></div>
+                <div class="header__menu">
+                    <li class="header__item"> <a class="link" href="{% url 'index' %}">Главная</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'about' %}">О нас </a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'meals' %}">Посетителям</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'news' %}">Новости</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'map' %}">Партнерам</a></li>
+                    <li class="header__item"> <a class="link" href="#">Qoidalar</a></li>
+                    <li class="header__item"> <a class="link" href="#">Kontaktlar</a></li>
+                </div>
+                <div class="header__lang"> <a href="{% url 'map' %}">РУС / ENG / УЗБ</a></div>
+                <button class="header__btn"><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="phead">
+        <div class="container">
+            <div class="phead__ground">
+                <div class="phead__page">Manzil</div>
+                <div class="phead__text"> <a href="{% url 'index' %}">Asosiy / Manzil</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="phead__deco"></div>
+    <div class="map">
+        <div class="map__photo"><img src="{% static 'media/karta.png' %}" alt="" /></div>
+        <div class="map__right">
+            <div class="container">
+                <div class="map__set">
+                    <div class="map__rote">
+                        <div class="b">Manzil</div>
+                        <div class="p">г.Ташкент, ул Амир Темур</div>
+                        <div class="map__rote"></div>
+                        <div class="b">Telefon</div>
+                        <div class="p">+8 71 202 35 82</div>
+                        <div class="map__rote"></div>
+                        <div class="b">Elektron pochta</div>
+                        <div class="p">toshkenttower@mail.ru</div>
+                        <div class="map__rote"></div>
+                        <div class="b">Ish vohti</div>
+                        <div class="p">Du-Shb. 9:00 - 18:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="adress__line mapadres">
+        <div class="adress__text">Qayta aloqa
+            <div class="adress__input">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <input class="input" name="map1" type="text" placeholder="Ism" />
+                    <input class="input" name="map2" type="number" placeholder="Telefon raqam" />
+                    <input class="input" name="map3" type="text" placeholder="map3" />
+                    <input class="input" name="map4" type="text" placeholder="map4" />
+                    <div class="btn_oneee"> <button type="submit" style="with=100px"> Junatish </button></div>
+<!--                    <button type="submit" style=" " class="btn" >Button Button Button</button>-->
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="social">
+        <div class="container">
+            <div class="social__page">
+                <div class="social__text">©Copyright 2021. Toshkent Tower</div>
+                <div class="social__icons"><a href="{% url 'meals' %}"><img src="{% static 'media/facebook.svg' %}" alt="" /></a><a href="{% url 'meals' %}"><img src="{% static 'media/instagram.svg' %}" alt="" /></a><a href="{% url 'meals' %}"><img src="{% static 'media/telegram.svg' %}" alt="" /></a></div>
+                <div class="social__items">veb-saytlarni ishlab chiqish Tuitsoft.uz</div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <script src="{% static 'js/app.min.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEW</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__phone">998 71 123 12 61</div>
+            <div class="header__back">
+                <div class="header__logo"> <img src="{% static 'media/logo.png' %}" alt="" /></div>
+                <div class="header__menu">
+                    <li class="header__item"> <a class="link" href="{% url 'index' %}">Главная</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'about' %}">О нас </a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'meals' %}">Посетителям</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'news' %}">Новости</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'map' %}">Партнерам</a></li>
+                    <li class="header__item"> <a class="link" href="#">Правила</a></li>
+                    <li class="header__item"> <a class="link" href="#">Контакты</a></li>
+                </div>
+                <div class="header__lang"> <a href="#">РУС / ENG / УЗБ</a></div>
+                <button class="header__btn"><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="phead">
+        <div class="container">
+            <div class="phead__ground">
+                <div class="phead__page">Новосты</div>
+                <div class="phead__text"><a href="{% url 'index' %}">Главная / Новосты</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="phead__deco"></div>
+    <discount class="discount"></discount>
+    <div class="container">
+        <div class="discount__row">
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="">Toshkent teleminorasi 36 yoshda </a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'meals' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'news' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'map' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'about' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'news' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'index' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'map' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'meals' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="{% url 'map' %}">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="#">Toshkent teleminorasi 36 yoshda</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+            <div class="discount__col-4">
+                <div class="discount__page">
+                    <div class="discount__photo"> <img src="{% static 'media/tele100.png' %}" alt="" /></div>
+                    <div class="discount__text"> <a href="#">Ташкентской телебашне 36 лет</a></div>
+                    <div class="discount__item">
+                        Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 36 yoshini nishonlamoqda.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="pagination">
+            <li><a class="link" href="{% url 'news' %}">1</a></li>
+            <li><a class="link" href="{% url 'meals' %}">2</a></li>
+            <li><a class="link" href="{% url 'map' %}">...</a></li>
+            <li><a class="link" href="{% url 'index' %}">5</a></li>
+            <li><a class="link" href="{% url 'about' %}">6</a></li>
+            <li><a class="link" href="{% url 'news' %}">7</a></li>
+            <li><a class="link" href="{% url 'news' %}">...</a></li>
+            <li><a class="link" href="{% url 'news' %}">10</a></li>
+            <li><a class="link" href="{% url 'news' %}">11</a></li>
+        </ul>
+    </div>
+    <div class="adress">
+        <div class="container">
+            <div class="adress__all">
+                <div class="adress__us">
+                    <div class="adress__left">
+                        <div class="b">Manzil</div>
+                        <div class="p">Toshkent sh. Amir Temur k.</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Telefon</div>
+                        <div class="p">+8 71 202 35 82</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Elektron pochtangiz</div>
+                        <div class="p">toshkenttower@mail.ru</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Ish vohti</div>
+                        <div class="p">Dsh-Shn. 9:00 - 18:00</div>
+                    </div>
+                    <div class="adress__line">
+                        <div class="adress__text">Qayta aloqa
+                            <div class="adress__input">
+                                <input class="input" type="text" placeholder="Ismingiz" />
+                                <input class="input" type="text" placeholder="Telefon raqamingiz" />
+                            </div>
+                        </div>
+                        <div class="adress__button"><a href="{% url 'news' %}">Junatish</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div class="container">
+            <div class="social__page">
+                <div class="social__text">©Copyright 2021. Toshkent Tower</div>
+                <div class="social__icons"><a href="{% url 'news' %}"><img src="{% static 'media/facebook.svg' %}" alt="" /></a><a href=""><img src="{% static 'media/instagram.svg' %}" alt="" /></a><a href=""><img src="{% static 'media/telegram.svg' %}" alt="" /></a></div>
+                <div class="social__items">veb-saytlarni ishlab chiqish Tuitsoft.uz</div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <script src="{% static 'js/app.min.js' %}"></script>
+</body>
+
+</html>

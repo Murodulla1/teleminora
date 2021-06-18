@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__phone">998 71 123 12 61</div>
+            <div class="header__back">
+                <div class="header__logo"> <img src="{% static 'media/logo.png' %}" alt="" /></div>
+                <div class="header__menu">
+                    <li class="header__item"> <a class="link" href="{% url 'index' %}">Главная</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'about' %}">О нас </a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'meals' %}">Посетителям</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'news' %}">Новости</a></li>
+                    <li class="header__item"> <a class="link" href="{% url 'map' %}">Партнерам</a></li>
+                    <li class="header__item"> <a class="link" href="#">Правила</a></li>
+                    <li class="header__item"> <a class="link" href="#">Контакты</a></li>
+                </div>
+                <div class="header__lang"> <a href="">РУС / ENG / УЗБ</a></div>
+                <button class="header__btn"><span></span></button>
+            </div>
+        </div>
+    </header>
+    <div class="phead">
+        <div class="container">
+            <div class="phead__ground">
+                <div class="phead__page">О нас</div>
+                <div class="phead__text"> <a href="{% url 'index' %}">Asosiy / Biz haqimizda</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="phead__deco"></div>
+    <div class="results">
+        <div class="container">
+            <div class="results__all">
+                <div class="results__photo"><a href=""><img src="{% static 'media/sldieer5.png' %}" alt="" /></a></div>
+                <div class="results__text">
+                    <div class="p">Toshkentdagi teleminora - bu O'zbekistonning me'moriy yodgorligi bo'lgan shaharning televizion va radioeshittirish inshooti.</div>
+                    <div class="p">Dastlab ushbu televizion minora Iroq poytaxti - Bag'dodda qurilishi kerak edi, uning bosh vaziri Kerim Qasem hatto qurilish uchun maxsus loyihani buyurgan edi. Ammo keyinchalik mamlakatda harbiy to'ntarish yuz berdi va loyiha hech qachon amalga oshirilmadi.</div>
+                    <div class="p">Keyin, O'zbekiston SSR Kompartiyasi Markaziy Qo'mitasining birinchi kotibi Sharaf Rashidov allaqachon qurib bitkazilgan loyihaga binoan Toshkentda teleminorani qurish bo'yicha ishlarni boshlab yubordi. Qurilishga tayyorgarlik boshlandi, Kudinov boshchiligidagi barcha ishlarni muvofiqlashtirish juda ko'p vaqtni talab qildi. 1978 yilda teleminoraning o'zi qurila boshlandi. Qurilish 6 yil davomida amalga oshirildi va 1985 yil qishida nihoyat Toshkent teleminorasi ochilib, o'z ishini boshladi.</div>
+                    <div class="results__respho"><img src="{% static 'media/results.png' %}" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tvtower">
+        <div class="container">
+            <div class="tvtower__us">
+                <div class="tvtower__text">
+                    <div class="h1">Toshkent Teleminorasi balandligi</div>
+                    <div class="b">Toshkent teleminorasining balandligi 375 metrni tashkil etadi. Bu butun Markaziy Osiyo hududida ochiq kuzatuv maydonchalari bo'lgan eng baland binolardan biridir. Minora Markaziy Osiyo tuzilmalari orasida balandligi bo'yicha ikkinchi o'rinda turadi (balandligi 420 metr bo'lgan Ekibastuz GRES-2 bacasidan keyin).</div>
+                    <div class="p">Телебашня в Ташкента в цифрах:</div>
+                    <div class="b">Balandligi bo'yicha dunyoda televizor minoralari orasida 12-o'rin; dunyodagi eng baland 38-inshoot; poydevor balandligi - 11 metr; dengiz sathidan balandligi - 480 metr; inshootning umumiy massasi - 6 ming tonnadan ortiq; inshoot - 55,500 kub metr; televizor minorasi qattiq payvandlangan po'latdan yasalgan; har biri balandligi 93 metr bo'lgan uchta konusning tayanch oyoqlari; tarqatilgan dasturlar soni - 4; aylanayotgan restoranning balandligi - 105 metr; balandligi dumaloq kuzatuv maydonchasi - 94 metr; uchta tezyurar lift (tezligi 4,8 metrdan oshiq menga bir soniya beradi).</div>
+                </div>
+                <div class="tvtower__photo"> <img src="{% static 'media/tvtower.png' %}" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="alltext">
+        <div class="container">
+            <div class="alltext__all">
+                <div class="alltext__page">
+                    <div class="p">Toshkent teleminorasidagi restoran</div>
+                    <div class="b">Toshkent teleminorasiga tashrif buyurgan barcha mehmonlar qushlarning ko'zlari bilan ovqatlanishlari mumkin. Buning uchun faqat minora hududida 98 metrdan 104 metrgacha balandlikda joylashgan "Koinot" ikki zalli restoraniga tashrif buyurishingiz kerak. Restoranning o'ziga xos xususiyati shundaki, uning qavati aylanib, tashrif buyuruvchilarga tobora ko'proq Toshkent manzaralarini namoyish etmoqda. Restoranning o'ziga xos atmosferasini engil pianino musiqasi, nafis dekorasi, yarim zulmat va stol ustidagi haqiqiy shamlar taqdim etadi.</div>
+                </div>
+                <div class="alltext__text">
+                    <div class="b">Toshkent teleminorasi kuzatuv maydonchasi bilan mashhur bo'lib, u shaharning go'zal ko'rinishini taqdim etadi. Saytga maxsus tezyurar liftlardan biri yordamida kirishingiz mumkin.</div>
+                    <div class="b">Shuningdek, teleminora hududida galereya deb nomlangan - dunyoning turli mamlakatlaridagi bir necha baland minoralardan tashkil topgan muzey mavjud bo'lib, ularning har biri 1991 yil kuzidan beri Toshkent teleminorasi singari. , Jahon minoralari federatsiyasi ro'yxatiga kiritilgan. Minora foyesi mehmonlarni Buxorboyevning noyob mozaikasi paneli bilan kutib oladi, u yarim qimmatbaho toshlar, metall va marmardan iborat bo'lib, umumiy maydoni taxminan 250 kvadrat metrni tashkil etadi. Panelda ona zamin tarixi, aloqa va kosmik, televidenie va radio haqida hikoya qiluvchi sahnalar tasvirlangan.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <event class="event">
+        <div class="container">
+            <div class="event__title">Hodisalar</div>
+            <div class="event__page">
+                <div class="event__box">
+                    <div class="event__photo"> <img src="{% static 'media/slidertel.png' %}" alt="" /></div>
+                    <div class="event__text"> <a href="{% url 'index' %}">Toshkent teleminorasi <br> 35 лет</a>
+                        <div class="event__item">
+                            Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.</div>
+                    </div>
+                </div>
+                <div class="event__box">
+                    <div class="event__photo"> <img src="{% static 'media/slidertel.png' %}" alt="" /></div>
+                    <div class="event__text"> <a href="{% url 'map' %}">Toshkent teleminorasi <br> 36 yosh</a>
+                        <div class="event__item">
+                            Toshkentning eng taniqli ramzi - Toshkent teleminorasi bugun o'zining 35 yoshini nishonlamoqda.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </event>
+    <div class="adress">
+        <div class="container">
+            <div class="adress__all">
+                <div class="adress__us">
+                    <div class="adress__left">
+                        <div class="b">Manzil</div>
+                        <div class="p">г.Ташкент, ул Амир Темур</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Телефон</div>
+                        <div class="p">+8 71 202 35 82</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Электронная почта</div>
+                        <div class="p">toshkenttower@mail.ru</div>
+                        <div class="adress__left"></div>
+                        <div class="b">Время работы</div>
+                        <div class="p">Пн-Сб. 9:00 - 18:00</div>
+                    </div>
+                    <div class="adress__line">
+
+                        <div class="adress__text">Qayta aloqa
+                            <div class="adress__input">
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                    <input name="abaut1" class="input" type="text" placeholder="Ism" />
+                                    <input name="abaut2" class="input" type="email" placeholder="email" />
+                                    <input name="abaut3" class="input" type="number" placeholder="Telefon raqam" />
+                                    <input name="abaut4" class="input" type="text" placeholder="manzili" />
+                                    <button type="submit" style=" " class="btn" >Button Button Button</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <div class="container">
+            <div class="social__page">
+                <div class="social__text">©Copyright 2021. Toshkent Tower</div>
+                <div class="social__icons"><a href="#"><img src="{% static 'media/facebook.svg' %}" alt="" /></a><a href="{% url 'news' %}"><img src="{% static '../assets/img/instagram.svg' %}" alt="" /></a><a href="{% url 'map' %}"><img src="{% static '../assets/img/telegram.svg' %}" alt="" /></a></div>
+                <div class="social__items">veb-saytlarni ishlab chiqish Tuitsoft.uz</div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <script src="{% static 'js/app.min.js' %}"></script>
+</body>
+
+</html>
